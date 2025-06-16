@@ -1,0 +1,104 @@
+2025-06-16T01:37:01.123456+09:00 elasticsearch[12345] INFO: Starting Elasticsearch version 9.0.2 on node elasticsearch
+2025-06-16T01:37:01.234567+09:00 elasticsearch[12345] DEBUG: Loading configuration from /usr/share/elasticsearch/config/elasticsearch.yml
+2025-06-16T01:37:01.345678+09:00 elasticsearch[12345] INFO: Cluster name set to 'test-cluster'
+2025-06-16T01:37:01.456789+09:00 elasticsearch[12345] DEBUG: Discovery type set to single-node
+2025-06-16T01:37:01.567890+09:00 elasticsearch[12345] INFO: Initializing JVM with options: -Xms512m -Xmx512m
+2025-06-16T01:37:01.678901+09:00 elasticsearch[12345] DEBUG: Checking bootstrap memory lock
+2025-06-16T01:37:01.789012+09:00 elasticsearch[12345] WARNING: Bootstrap memory lock disabled due to single-node discovery
+2025-06-16T01:37:01.890123+09:00 elasticsearch[12345] INFO: Binding HTTP to 0.0.0.0:9200
+2025-06-16T01:37:01.901234+09:00 elasticsearch[12345] DEBUG: HTTP SSL disabled, xpack.security.http.ssl.enabled=false
+2025-06-16T01:37:02.012345+09:00 elasticsearch[12345] INFO: Security disabled, xpack.security.enabled=false
+2025-06-16T01:37:02.123456+09:00 elasticsearch[12345] DEBUG: Loading plugins from /usr/share/elasticsearch/plugins
+2025-06-16T01:37:02.234567+09:00 elasticsearch[12345] INFO: No plugins found
+2025-06-16T01:37:02.345678+09:00 elasticsearch[12345] INFO: Node elasticsearch is ready to join cluster test-cluster
+2025-06-16T01:37:02.456789+09:00 elasticsearch[12345] DEBUG: Initializing indices directory at /usr/share/elasticsearch/data
+2025-06-16T01:37:02.567890+09:00 elasticsearch[12345] INFO: Elasticsearch node started successfully
+2025-06-16T01:37:03.678901+09:00 elasticsearch[12345] DEBUG: Received HTTP request: GET /_cluster/health
+2025-06-16T01:37:03.789012+09:00 elasticsearch[12345] INFO: Cluster health status: green
+2025-06-16T01:37:03.890123+09:00 elasticsearch[12345] DEBUG: Responding with cluster health details: {"status":"green","number_of_nodes":1}
+2025-06-16T01:37:04.012345+09:00 elasticsearch[12345] WARNING: High disk usage detected: 85% on /usr/share/elasticsearch/data
+2025-06-16T01:37:04.123456+09:00 elasticsearch[12345] ERROR: Failed to allocate shard due to low disk space
+2025-06-16T01:37:04.234567+09:00 elasticsearch[12345] DEBUG: Retrying shard allocation after 10 seconds
+2025-06-16T01:37:04.345678+09:00 elasticsearch[12345] INFO: Successfully allocated shard after retry
+2025-06-16T01:37:05.456789+09:00 elasticsearch[12345] DEBUG: Processing incoming document for index test-index
+2025-06-16T01:37:05.567890+09:00 elasticsearch[12345] INFO: Document indexed successfully: test-index/_doc/123
+2025-06-16T01:37:05.678901+09:00 elasticsearch[12345] DEBUG: Updating index mappings for test-index
+2025-06-16T01:37:05.789012+09:00 elasticsearch[12345] WARNING: Deprecated setting used in index mapping: dynamic_templates
+2025-06-16T01:37:06.890123+09:00 elasticsearch[12345] INFO: Snapshot initiated for repository backup-repo
+2025-06-16T01:37:07.012345+09:00 elasticsearch[12345] DEBUG: Snapshot process: copying data for index test-index
+2025-06-16T01:37:07.123456+09:00 elasticsearch[12345] ERROR: Snapshot failed due to network timeout
+2025-06-16T01:37:07.234567+09:00 elasticsearch[12345] CRITICAL: Failed to connect to backup repository: backup-repo
+2025-06-16T01:37:07.345678+09:00 elasticsearch[12345] DEBUG: Retrying snapshot operation in 30 seconds
+2025-06-16T01:37:07.456789+09:00 elasticsearch[12345] INFO: Snapshot retry successful
+2025-06-16T01:37:08.567890+09:00 elasticsearch[12345] DEBUG: Monitoring JVM heap usage: 450MB used, 512MB max
+2025-06-16T01:37:08.678901+09:00 elasticsearch[12345] WARNING: JVM heap usage approaching threshold: 87%
+2025-06-16T01:37:09.789012+09:00 elasticsearch[12345] INFO: Garbage collection triggered
+2025-06-16T01:37:09.890123+09:00 elasticsearch[12345] DEBUG: GC completed, heap usage reduced to 300MB
+2025-06-16T01:37:10.012345+09:00 kibana[54321] INFO: Starting Kibana version 9.0.2
+2025-06-16T01:37:10.123456+09:00 kibana[54321] DEBUG: Loading Kibana configuration from /usr/share/kibana/config/kibana.yml
+2025-06-16T01:37:10.234567+09:00 kibana[54321] INFO: Connecting to Elasticsearch at http://elasticsearch:9200
+2025-06-16T01:37:10.345678+09:00 kibana[54321] DEBUG: Attempting to authenticate with elasticsearch
+2025-06-16T01:37:10.456789+09:00 kibana[54321] ERROR: Authentication failed: invalid credentials for kibana_system
+2025-06-16T01:37:10.567890+09:00 kibana[54321] DEBUG: Retrying authentication in 5 seconds
+2025-06-16T01:37:15.678901+09:00 kibana[54321] INFO: Authentication successful
+2025-06-16T01:37:15.789012+09:00 kibana[54321] INFO: Kibana server running at http://0.0.0.0:5601
+2025-06-16T01:37:15.890123+09:00 kibana[54321] DEBUG: Loading dashboard configuration
+2025-06-16T01:37:16.012345+09:00 kibana[54321] WARNING: Dashboard import took longer than expected: 2.5s
+2025-06-16T01:37:16.123456+09:00 kibana[54321] INFO: Dashboard test-dashboard loaded successfully
+2025-06-16T01:37:16.234567+09:00 kibana[54321] DEBUG: Processing API request: GET /api/status
+2025-06-16T01:37:16.345678+09:00 kibana[54321] INFO: API request completed: status=ok
+2025-06-16T01:37:17.456789+09:00 logstash[67890] INFO: Starting Logstash version 9.0.2
+2025-06-16T01:37:17.567890+09:00 logstash[67890] DEBUG: Loading pipeline configuration from /usr/share/logstash/pipeline
+2025-06-16T01:37:17.678901+09:00 logstash[67890] INFO: Pipeline configuration loaded successfully
+2025-06-16T01:37:17.789012+09:00 logstash[67890] DEBUG: Connecting to Elasticsearch at http://elasticsearch:9200
+2025-06-16T01:37:17.890123+09:00 logstash[67890] ERROR: Failed to connect to Elasticsearch: connection refused
+2025-06-16T01:37:18.012345+09:00 logstash[67890] DEBUG: Retrying Elasticsearch connection in 10 seconds
+2025-06-16T01:37:28.123456+09:00 logstash[67890] INFO: Elasticsearch connection established
+2025-06-16T01:37:28.234567+09:00 logstash[67890] DEBUG: Processing log event: {"message":"Sample log","level":"info"}
+2025-06-16T01:37:28.345678+09:00 logstash[67890] INFO: Log event processed and sent to Elasticsearch
+2025-06-16T01:37:29.456789+09:00 logstash[67890] WARNING: High CPU usage detected: 92%
+2025-06-16T01:37:29.567890+09:00 logstash[67890] DEBUG: Adjusting pipeline throughput
+2025-06-16T01:37:30.678901+09:00 logstash[67890] INFO: Pipeline running normally
+2025-06-16T01:37:30.789012+09:00 elasticsearch[12345] DEBUG: Received bulk index request: 100 documents
+2025-06-16T01:37:30.890123+09:00 elasticsearch[12345] INFO: Bulk index completed: 100/100 documents indexed
+2025-06-16T01:37:31.012345+09:00 elasticsearch[12345] WARNING: Slow query detected: took 1.2s
+2025-06-16T01:37:31.123456+09:00 elasticsearch[12345] DEBUG: Query details: {"query":{"match_all":{}}}
+2025-06-16T01:37:31.234567+09:00 kibana[54321] INFO: User login successful: user=admin
+2025-06-16T01:37:31.345678+09:00 kibana[54321] DEBUG: Loading visualization test-viz
+2025-06-16T01:37:31.456789+09:00 kibana[54321] ERROR: Visualization load failed: invalid data format
+2025-06-16T01:37:31.567890+09:00 kibana[54321] DEBUG: Retrying visualization load
+2025-06-16T01:37:31.678901+09:00 kibana[54321] INFO: Visualization loaded successfully
+2025-06-16T01:37:32.789012+09:00 elasticsearch[12345] INFO: Cluster health check: {"status":"green","number_of_nodes":1}
+2025-06-16T01:37:32.890123+09:00 elasticsearch[12345] DEBUG: Monitoring disk usage: 86%
+2025-06-16T01:37:33.012345+09:00 elasticsearch[12345] ERROR: Disk usage exceeded threshold: 90%
+2025-06-16T01:37:33.123456+09:00 elasticsearch[12345] CRITICAL: Node entering read-only mode due to low disk space
+2025-06-16T01:37:33.234567+09:00 elasticsearch[12345] DEBUG: Applying read-only settings to indices
+2025-06-16T01:37:33.345678+09:00 elasticsearch[12345] INFO: Read-only mode applied successfully
+2025-06-16T01:37:34.456789+09:00 logstash[67890] DEBUG: Processing log event: {"message":"Error log","level":"error"}
+2025-06-16T01:37:34.567890+09:00 logstash[67890] INFO: Log event processed successfully
+2025-06-16T01:37:34.678901+09:00 kibana[54321] INFO: Exporting dashboard test-dashboard to PDF
+2025-06-16T01:37:34.789012+09:00 kibana[54321] DEBUG: Generating PDF report
+2025-06-16T01:37:34.890123+09:00 kibana[54321] WARNING: PDF generation took longer than expected: 3s
+2025-06-16T01:37:35.012345+09:00 kibana[54321] INFO: PDF export completed
+2025-06-16T01:37:35.123456+09:00 elasticsearch[12345] DEBUG: Handling search request: {"query":{"term":{"field":"value"}}}
+2025-06-16T01:37:35.234567+09:00 elasticsearch[12345] INFO: Search request completed: 50 hits
+2025-06-16T01:37:35.345678+09:00 elasticsearch[12345] DEBUG: Updating cluster stats
+2025-06-16T01:37:35.456789+09:00 elasticsearch[12345] INFO: Cluster stats updated
+2025-06-16T01:37:36.567890+09:00 logstash[67890] DEBUG: Pipeline stats: {"events_processed":1000,"events_dropped":0}
+2025-06-16T01:37:36.678901+09:00 logstash[67890] INFO: Pipeline running smoothly
+2025-06-16T01:37:36.789012+09:00 kibana[54321] DEBUG: Processing API request: POST /api/saved_objects/_bulk_create
+2025-06-16T01:37:36.890123+09:00 kibana[54321] INFO: Bulk create completed: 10 objects created
+2025-06-16T01:37:37.012345+09:00 elasticsearch[12345] DEBUG: Monitoring JVM heap: 480MB used
+2025-06-16T01:37:37.123456+09:00 elasticsearch[12345] WARNING: High heap usage detected: 93%
+2025-06-16T01:37:37.234567+09:00 elasticsearch[12345] INFO: Triggering garbage collection
+2025-06-16T01:37:37.345678+09:00 elasticsearch[12345] DEBUG: GC completed, heap usage: 350MB
+2025-06-16T01:37:38.456789+09:00 kibana[54321] INFO: User session expired: user=admin
+2025-06-16T01:37:38.567890+09:00 kibana[54321] DEBUG: Clearing session cache
+2025-06-16T01:37:38.678901+09:00 kibana[54321] INFO: Session cache cleared
+2025-06-16T01:37:38.789012+09:00 logstash[67890] DEBUG: Processing log event: {"message":"Test log","level":"debug"}
+2025-06-16T01:37:38.890123+09:00 logstash[67890] INFO: Log event processed successfully
+2025-06-16T01:37:39.012345+09:00 elasticsearch[12345] INFO: Index test-index refreshed
+2025-06-16T01:37:39.123456+09:00 elasticsearch[12345] DEBUG: Refresh took 0.5s
+2025-06-16T01:37:39.234567+09:00 elasticsearch[12345] WARNING: High refresh rate detected on test-index
+2025-06-16T01:37:39.345678+09:00 elasticsearch[12345] DEBUG: Adjusting refresh interval to 30s
+2025-06-16T01:37:39.456789+09:00 elasticsearch[12345] INFO: Refresh interval updated successfully

@@ -1,0 +1,45 @@
+[1mdiff --git a/docker-compose.yml b/docker-compose.yml[m
+[1mindex 6ba90d9..0be5b37 100644[m
+[1m--- a/docker-compose.yml[m
+[1m+++ b/docker-compose.yml[m
+[36m@@ -1,19 +1,6 @@[m
+ services:[m
+ [m
+[31m-  # The 'setup' service runs a one-off script which initializes users inside[m
+[31m-  # Elasticsearch — such as 'logstash_internal' and 'kibana_system' — with the[m
+[31m-  # values of the passwords defined in the '.env' file. It also creates the[m
+[31m-  # roles required by some of these users.[m
+[31m-  #[m
+[31m-  # This task only needs to be performed once, during the *initial* startup of[m
+[31m-  # the stack. Any subsequent run will reset the passwords of existing users to[m
+[31m-  # the values defined inside the '.env' file, and the built-in roles to their[m
+[31m-  # default permissions.[m
+[31m-  #[m
+[31m-  # By default, it is excluded from the services started by 'docker compose up'[m
+[31m-  # due to the non-default profile it belongs to. To run it, either provide the[m
+[31m-  # '--profile=setup' CLI flag to Compose commands, or "up" the service by name[m
+[31m-  # such as 'docker compose up setup'.[m
+[32m+[m[32m  # such as 'docker compose up setup' and docker compose up[m
+   setup:[m
+     profiles:[m
+       - setup[m
+[36m@@ -52,6 +39,8 @@[m [mservices:[m
+       - 9200:9200[m
+       - 9300:9300[m
+     environment:[m
+[32m+[m[32m      xpack.security.enabled: true[m
+[32m+[m[32m      xpack.security.http.ssl.enabled: true[m
+       node.name: elasticsearch[m
+       ES_JAVA_OPTS: -Xms512m -Xmx512m[m
+       # Bootstrap password.[m
+[1mdiff --git a/elasticsearch/config/elasticsearch.yml b/elasticsearch/config/elasticsearch.yml[m
+[1mindex 2c042bf..1cd1dee 100644[m
+[1m--- a/elasticsearch/config/elasticsearch.yml[m
+[1m+++ b/elasticsearch/config/elasticsearch.yml[m
+[36m@@ -5,5 +5,4 @@[m
+ cluster.name: docker-cluster[m
+ network.host: 0.0.0.0[m
+ [m
+[31m-xpack.license.self_generated.type: trial[m
+[31m-xpack.security.enabled: true[m
+[32m+[m[32m#xpack.security.enabled: true[m
