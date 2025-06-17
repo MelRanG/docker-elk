@@ -2,6 +2,14 @@
 
 Ref: https://github.com/deviantony/docker-elk.git
 
+- Differences from the Reference
+   1. Docker compose setting with filebeat
+   2. Add test log file
+   3. Add settings logstash, filbeat yml
+   4. After running, you can view the log you created.
+   5. Add command to prevent errors that occur when restarting docker compose up setup -> netwrok error
+   6. change password changeme -> elastic
+
 [![Elastic Stack version](https://img.shields.io/badge/Elastic%20Stack-9.0.2-00bfb3?style=flat&logo=elastic-stack)](https://www.elastic.co/blog/category/releases)
 [![Build Status](https://github.com/deviantony/docker-elk/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/deviantony/docker-elk/actions/workflows/ci.yml?query=branch%3Amain)
 [![Join the chat](https://badges.gitter.im/Join%20Chat.svg)](https://app.gitter.im/#/room/#deviantony_docker-elk:gitter.im)
@@ -33,6 +41,16 @@ docker compose up
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/6f67cbc0-ddee-44bf-8f4d-7fd2d70f5217">
   <img alt="Animated demo" src="https://github.com/user-attachments/assets/501a340a-e6df-4934-90a2-6152b462c14a">
 </picture>
+
+
+## restart
+```sh
+//delete volumn
+docker compose down -v
+//if occur network error when you run docker compose up setup you try this command
+docker compose up --force-recreate setup
+docekr compose up
+```
 
 ---
 
@@ -213,4 +231,5 @@ In order to entirely shutdown the stack and remove all persisted data, use the f
 
 ```sh
 docker compose down -v
+//
 ```
