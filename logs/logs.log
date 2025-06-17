@@ -1,2 +1,40 @@
-2025-06-17T16:04:00:00:00 testapp[9999] INFO: asdasdasd
-2025-06-17T16:24:00:00:00 testapp[9999] INFO: asdasdasd
+2025-06-17T23:32:00:00:00 testapp[1234] INFO: Application started successfully
+2025-06-17T23:32:01:00:00 testapp[1234] DEBUG: Loading configuration file from /etc/testapp/config.yaml
+2025-06-17T23:32:02:00:00 testapp[1234] INFO: User admin logged in from 192.168.0.10
+2025-06-17T23:32:03:00:00 testapp[1234] WARN: Disk space running low on /dev/sda1 (5% remaining)
+2025-06-17T23:32:04:00:00 testapp[1234] ERROR: Failed to connect to database: connection timeout after 30 seconds
+2025-06-17T23:32:05:00:00 testapp[1234] INFO: Retrying database connection (attempt 2 of 5)
+2025-06-17T23:32:06:00:00 testapp[1234] DEBUG: Query executed: SELECT * FROM users WHERE active = 1
+2025-06-17T23:32:07:00:00 testapp[1234] INFO: User guest requested password reset
+2025-06-17T23:32:08:00:00 testapp[1234] WARN: High memory usage detected: 92% used
+2025-06-17T23:32:09:00:00 testapp[1234] ERROR: Unable to send email: SMTP server not responding
+2025-06-17T23:32:10:00:00 testapp[1234] INFO: Scheduled backup started
+2025-06-17T23:32:11:00:00 testapp[1234] DEBUG: Backup archive created at /backups/backup-20250617.tar.gz
+2025-06-17T23:32:12:00:00 testapp[1234] INFO: Backup completed successfully
+2025-06-17T23:32:13:00:00 testapp[1234] WARN: API rate limit approaching (95% used)
+2025-06-17T23:32:14:00:00 testapp[1234] ERROR: API request failed: 429 Too Many Requests
+2025-06-17T23:32:15:00:00 testapp[1234] FATAL: Unhandled exception occurred, shutting down application
+2025-06-17T23:32:16:00:00 testapp[1234] INFO: Application shutdown initiated by user admin
+2025-06-17T23:32:17:00:00 testapp[1234] DEBUG: Cleanup temporary files in /tmp/testapp/
+2025-06-17T23:32:18:00:00 testapp[1234] INFO: All services stopped gracefully
+2025-06-17T23:32:19:00:00 testapp[1234] INFO: Application exited with code 0
+2025-06-17T23:32:20:00:00 testapp[1234] INFO: Application started successfully
+2025-06-17T23:32:21:00:00 testapp[1234] DEBUG: Loading configuration file from /etc/testapp/config.yaml
+2025-06-17T23:32:22:00:00 testapp[1234] INFO: User admin logged in from 192.168.0.10
+2025-06-17T23:32:23:00:00 testapp[1234] WARN: Disk space running low on /dev/sda1 (5% remaining)
+2025-06-17T23:32:24:00:00 testapp[1234] ERROR: Failed to connect to database: connection timeout after 30 seconds
+2025-06-17T23:32:25:00:00 testapp[1234] INFO: Retrying database connection (attempt 2 of 5)
+2025-06-17T23:32:26:00:00 testapp[1234] DEBUG: Query executed: SELECT * FROM users WHERE active = 1
+2025-06-17T23:32:27:00:00 testapp[1234] INFO: User guest requested password reset
+2025-06-17T23:32:28:00:00 testapp[1234] WARN: High memory usage detected: 92% used
+2025-06-17T23:32:29:00:00 testapp[1234] ERROR: Unable to send email: SMTP server not responding
+2025-06-17T23:32:30:00:00 testapp[1234] INFO: Scheduled backup started
+2025-06-17T23:32:31:00:00 testapp[1234] DEBUG: Backup archive created at /backups/backup-20250617.tar.gz
+2025-06-17T23:32:32:00:00 testapp[1234] INFO: Backup completed successfully
+2025-06-17T23:32:33:00:00 testapp[1234] WARN: API rate limit approaching (95% used)
+2025-06-17T23:32:34:00:00 testapp[1234] ERROR: API request failed: 429 Too Many Requests
+2025-06-17T23:32:35:00:00 testapp[1234] FATAL: Unhandled exception occurred, shutting down application
+2025-06-17T23:32:36:00:00 testapp[1234] INFO: Application shutdown initiated by user admin
+2025-06-17T23:32:37:00:00 testapp[1234] DEBUG: Cleanup temporary files in /tmp/testapp/
+2025-06-17T23:32:38:00:00 testapp[1234] INFO: All services stopped gracefully
+2025-06-17T23:32:39:00:00 testapp[1234] INFO: Application exited with code 0

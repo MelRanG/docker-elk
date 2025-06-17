@@ -45,9 +45,11 @@ filebeat.inputs:
     enabled: true
     paths:
       - /logs/*.log
+    #작은 파일도 읽을 수 있도록 설정. 운영단계에선 삭제필수
+    prospector.scanner.fingerprint.enabled: false
 output.logstash:
   hosts: ["logstash:5044"]
-# logging.level: info
+logging.level: debug
 # logging.to_files: false
 # logging.to_syslog: false
 
@@ -60,6 +62,6 @@ output.logstash:
 ## https://www.elastic.co/docs/reference/beats/filebeat/http-endpoint
 #
 
-http:
-  enabled: true
-  host: 0.0.0.0
+# http:
+#   enabled: true
+#   host: 0.0.0.0

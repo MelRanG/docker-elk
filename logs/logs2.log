@@ -1,0 +1,40 @@
+2025-06-17T23:32:40:00:00 ordersvc[5678] INFO: Order service started and listening on port 9000
+2025-06-17T23:32:41:00:00 ordersvc[5678] DEBUG: Received new order request: orderId=202506170001
+2025-06-17T23:32:42:00:00 ordersvc[5678] INFO: Validating order data for userId=1002
+2025-06-17T23:32:43:00:00 ordersvc[5678] WARN: Item stock low for productId=3005 (remaining: 2)
+2025-06-17T23:32:44:00:00 ordersvc[5678] ERROR: Payment gateway timeout for orderId=202506170001
+2025-06-17T23:32:45:00:00 ordersvc[5678] INFO: Retrying payment for orderId=202506170001 (attempt 2)
+2025-06-17T23:32:46:00:00 ordersvc[5678] DEBUG: Payment API request payload: {"amount": 12000, "method": "card"}
+2025-06-17T23:32:47:00:00 ordersvc[5678] INFO: Payment successful for orderId=202506170001
+2025-06-17T23:32:48:00:00 ordersvc[5678] WARN: Delayed response from inventory service (response time: 3.2s)
+2025-06-17T23:32:49:00:00 ordersvc[5678] ERROR: Failed to update inventory for productId=3005
+2025-06-17T23:32:50:00:00 ordersvc[5678] INFO: Sending order confirmation email to userId=1002
+2025-06-17T23:32:51:00:00 ordersvc[5678] DEBUG: Email sent: messageId=abc123xyz
+2025-06-17T23:32:52:00:00 ordersvc[5678] INFO: Order completed successfully: orderId=202506170001
+2025-06-17T23:32:53:00:00 ordersvc[5678] WARN: High CPU usage detected: 87%
+2025-06-17T23:32:54:00:00 ordersvc[5678] ERROR: External API limit reached for shipping provider
+2025-06-17T23:32:55:00:00 ordersvc[5678] FATAL: Unhandled exception in order processing thread
+2025-06-17T23:32:56:00:00 ordersvc[5678] INFO: Order service shutting down for maintenance
+2025-06-17T23:32:57:00:00 ordersvc[5678] DEBUG: Cleaning up temporary order cache files
+2025-06-17T23:32:58:00:00 ordersvc[5678] INFO: All pending orders processed
+2025-06-17T23:32:59:00:00 ordersvc[5678] INFO: Order service stopped successfully
+2025-06-17T23:33:00:00:00 ordersvc[5678] INFO: Order service started and listening on port 9000
+2025-06-17T23:33:01:00:00 ordersvc[5678] DEBUG: Received new order request: orderId=202506170002
+2025-06-17T23:33:02:00:00 ordersvc[5678] INFO: Validating order data for userId=1003
+2025-06-17T23:33:03:00:00 ordersvc[5678] WARN: Item stock low for productId=3010 (remaining: 1)
+2025-06-17T23:33:04:00:00 ordersvc[5678] ERROR: Payment gateway timeout for orderId=202506170002
+2025-06-17T23:33:05:00:00 ordersvc[5678] INFO: Retrying payment for orderId=202506170002 (attempt 2)
+2025-06-17T23:33:06:00:00 ordersvc[5678] DEBUG: Payment API request payload: {"amount": 45000, "method": "bank"}
+2025-06-17T23:33:07:00:00 ordersvc[5678] INFO: Payment successful for orderId=202506170002
+2025-06-17T23:33:08:00:00 ordersvc[5678] WARN: Delayed response from inventory service (response time: 2.8s)
+2025-06-17T23:33:09:00:00 ordersvc[5678] ERROR: Failed to update inventory for productId=3010
+2025-06-17T23:33:10:00:00 ordersvc[5678] INFO: Sending order confirmation email to userId=1003
+2025-06-17T23:33:11:00:00 ordersvc[5678] DEBUG: Email sent: messageId=def456uvw
+2025-06-17T23:33:12:00:00 ordersvc[5678] INFO: Order completed successfully: orderId=202506170002
+2025-06-17T23:33:13:00:00 ordersvc[5678] WARN: High CPU usage detected: 90%
+2025-06-17T23:33:14:00:00 ordersvc[5678] ERROR: External API limit reached for shipping provider
+2025-06-17T23:33:15:00:00 ordersvc[5678] FATAL: Unhandled exception in order processing thread
+2025-06-17T23:33:16:00:00 ordersvc[5678] INFO: Order service shutting down for maintenance
+2025-06-17T23:33:17:00:00 ordersvc[5678] DEBUG: Cleaning up temporary order cache files
+2025-06-17T23:33:18:00:00 ordersvc[5678] INFO: All pending orders processed
+2025-06-17T23:33:19:00:00 ordersvc[5678] INFO: Order service stopped successfully
