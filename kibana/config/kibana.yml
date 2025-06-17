@@ -29,7 +29,7 @@ elasticsearch.password: ${KIBANA_SYSTEM_PASSWORD}
 
 ## Fleet
 ## https://www.elastic.co/docs/reference/kibana/configuration-reference/fleet-settings
-#
+
 xpack.fleet.agents.fleet_server.hosts: [ http://fleet-server:8220 ]
 
 xpack.fleet.outputs:
